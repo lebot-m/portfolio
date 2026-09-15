@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio LE BOT</title>
+	<link href="src/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav id="nav">
+	<a href="#">
+		<h3>LE BOT Mattéo</h3>
+	</a>
+
+	<div class="links">
+		<a href="#presentation"><span>Présentation</span></a>
+		<a href="#Formations"><span>Formations</span></a>
+		<a href="#projets"><span>Projets</span></a>
+		<a href="#jeux"><span>Jeux</span></a>
+		<a href="#info"><span>Informations</span></a>
+	</div>
+
+	<div class="hamburger" onclick="nav();">
+		<div class="line line1"></div>
+		<div class="line line2"></div>
+		<div class="line line3"></div>
+	</div>
+</nav>
+
+<main>
+	<section class="presentation" id="presentation">
+		<div class="text contenu">
+			<div class="inner">
+				<h1>LE BOT Mattéo</h1>
+				<img src="ressources/chrono.png" alt="Logo / Illustration">
+				<h2>Présentation</h2>
+				<p>Je suis LE BOT Mattéo, j'ai 20 ans et suis actuellement en seconde année d'IUT informatique à Sète,
+					en spécialisation en programmation et conception. J'ai commencé à m'intéresser à
+					l'informatique au lycée notamment à travers la spécialité NSI.
+					<br><br>
+					Par la suite, j'ai effectué la piscine d'entrée de l'école 42 où j'ai pu apprendre le
+					C de manière intensive pendant un mois (juillet 2024) me confortant dans mon intérêt
+					dans l'informatique.
+					<br>
+					Au fil de mes projets, j’ai pu travailler sur la conception d’architectures de bases de données,
+					l’optimisation de designs existants ainsi que la réalisation de diagrammes d’analyse. La recherche
+					et la compréhension de nouveaux concepts techniques quels qu'ils soient sont des aspects qui me motivent particulièrement.
+					<br><br>
+					Je suis passionné de jeux vidéo (tetris, versus et autres), d'esport (karmine corp) et de musique,
+					j'ai notamment appris en autodidacte le maniement de logiciels de musique (FL Studio) pour faire
+					quelques musiques pour mon propre plaisir.
+					<br><br>
+					J'ai aussi un très bon niveau en anglais, cela m'a ouvert à la culture du monde, me permettant de
+					consommer du contenu en anglais tous les jours représentant un vrai plus lors de mes voyages à
+					l'étranger.
+					<br><br>
+					<strong>
+						Aujourd’hui, je suis prêt à intégrer le monde professionnel et je recherche une entreprise que je
+						peux intégrer en alternance, dans laquelle je pourrai mettre mes compétences au service de projets
+						concrets, apprendre encore et contribuer de manière efficace aux projets de votre entreprise.
+					</strong>
+				</p>
+				<div id="cv">
+					<a href="./ressources/CV.pdf">CV - cliquez ici</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<svg xmlns="http://www.w3.org/2000/svg" id="svg-formations" viewBox="0 0 1440 800" width="1440" height="300" preserveAspectRatio="none" style="margin-bottom: -1px;">
+		<path d="M0 623L60 599.7C120 576.3 240 529.7 360 505.2C480 480.7 600 478.3 720 495.5C840 512.7 960 549.3 1080 552.8C1200 556.3 1320 526.7 1380 511.8L1440 497L1440 801L1380 801C1320 801 1200 801 1080 801C960 801 840 801 720 801C600 801 480 801 360 801C240 801 120 801 60 801L0 801Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter"/>
+	</svg>
+
+	<section class="formations" id="Formations">
+		<div class="text">
+			<h2>Formations</h2>
+		</div>
+
+		<div class="container">
+			<div class="formation-card contenu">
+				<div class="name">
+					<h4>2021-2024</h4>
+					<h5><strong>Lycée Saint-Joseph - Avignon</strong></h5>
+				</div>
+				<p>BAC Général spécialités Maths-NSI</p>
+			</div>
+
+			<div class="formation-card contenu">
+				<div class="name">
+					<h4>2024-2025</h4>
+					<h5><strong>École d’ingénierie ESISAR - Valence</strong></h5>
+				</div>
+				<p>Classe préparatoire intégrée</p>
+			</div>
+
+			<div class="formation-card contenu">
+				<div class="name">
+					<h4>2025-2027 (en cours)</h4>
+					<h5><strong>IUT de Montpellier-Sète</strong></h5>
+				</div>
+				<p>BUT Informatique Développement Applications (parcours RACDV)</p>
+			</div>
+		</div>
+	</section>
+
+	<svg xmlns="http://www.w3.org/2000/svg" id="svg-projets" viewBox="0 0 1440 800" width="1440" height="300" preserveAspectRatio="none" style="margin-bottom: -1px;">
+		<path d="M0 175L60 198.3C120 221.7 240 268.3 360 292.8C480 317.3 600 319.7 720 302.5C840 285.3 960 248.7 1080 245.2C1200 241.7 1320 271.3 1380 286.2L1440 301L1440 0L1380 0C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0L0 0Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter"/>
+	</svg>
+
+	<section class="trusted" id="projets">
+		<div class="inner">
+			<h2>Mes projets 2025-2026</h2>
+
+			<div class="projets-grid">
+				<article id="Dominion" class="presentation-card contenu">
+					<div class="card-header">
+						<h3>UE1 Réaliser un développement d'application</h3>
+					</div>
+
+					<div class="card-body">
+						<div class="texte">
+							<div class="block">
+								<h5>Projet : Dominion Seaside</h5>
+								<p>
+									<strong>Contexte :</strong><br>
+									Dans le cadre d’un projet de développement d'application en JAVA et JAVAFX, nous avons conçu un jeu basé sur le Dominion, extension Seaside.
+									L’objectif était, en deux parties, d'implémenter la logique du jeu avec une interface préfaite.
+									Dans un second temps, il fallait créer une interface en prenant la partie logique en "blackbox".
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Objectif :</strong><br>
+									L'objectif principal était de rendre utilisable et de designer une interface à partir d'un code déjà présent. Contrairement à d'autres projets que j'ai pu réaliser précédemment, je me suis concentré sur la qualité du code, la validation de nombreux tests ainsi que sur le respect strict des consignes. L'application devait de cette manière être robuste et testable tout en conservant une cohérence dans la gestion des évènements.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Bilan & Compétences :</strong><br>
+									Ce projet m'a permis de développer mes compétences dans l'élaboration d'une application à travers les diverses phases de test ayant suivi l'implémentations de conceptions simples à travers des cartes aux effets différents. Ainsi, j'ai eu a respecter les besoins décrits par les règles d'un jeu faisant évoluer l'application tout au long de ce projet.
+								</p>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<img src="ressources/dominion.png" alt="Aperçu Dominion">
+						</div>
+					</div>
+				</article>
+
+				<article id="systeme" class="presentation-card contenu">
+					<div class="card-header">
+						<h3>UE3 Administrer des systèmes informatiques communicants complexes</h3>
+					</div>
+
+					<div class="card-body">
+						<div class="texte">
+							<div class="block">
+								<h5>Projet : Déploiement d'une nouvelle architecture technique</h5>
+								<p>
+									<strong>Contexte :</strong><br>
+									Dans le cadre de la mise en place d'une nouvelle infrastructure informatique, nous devions déployer, grâce à des machines virtuelles, divers services interconnectés.
+									Il fallait déployer, configurer et sécuriser différents services système et réseau (web, base de données, messagerie, accès distant, NAT), afin de simuler une architecture proche d’un environnement professionnel.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Objectif :</strong><br>
+									Le projet a été réalisé en duo au sein d’un environnement virtualisé. Chaque membre était responsable de plusieurs services (NGINX, MariaDB, MySQL, SSH, serveur mail Postfix).
+									Les machines virtuelles devaient communiquer entre elles via un plan d’adressage défini, avec gestion des accès distants au sein d'un même réseau.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Bilan & Compétences :</strong><br>
+									- Déployer plusieurs services réseau sur différentes machines virtuelles.<br>
+									- Configurer les accès distants sécurisés (SSH).<br>
+									- Mettre en place une architecture client/serveur cohérente.<br>
+									- Implémenter une redirection de port (NAT).<br>
+									- Comprendre le fonctionnement des ports, des règles de routage.
+								</p>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<img src="ressources/saeSys.png" alt="Aperçu Système">
+						</div>
+					</div>
+				</article>
+
+				<article id="Bdd" class="presentation-card contenu">
+					<div class="card-header">
+						<h3>UE4 Gérer des données de l'information</h3>
+					</div>
+
+					<div class="card-body">
+						<div class="texte">
+							<div class="block">
+								<h5>Projet : Base de données d'un Club de plongée</h5>
+								<p>
+									<strong>Contexte :</strong><br>
+									Dans le cadre d’un projet d'élaboration d'une base données et d'extractions d'informations d'un club de plongée, nous avons crée une base de données relationnelle.
+									Il fallait dans un premier temps déterminer les besoins du client afin de proposer une solution technique fiable et efficace.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Objectif :</strong><br>
+									L'objectif principal était de réaliser d'abord un schéma entité/association devant répondre à un cahier des charges. Ce processus doit par ailleurs représenter la structure de la base données en vue d'avoir un retour client précédent la phase de conception. Aussi, la base de données devait être réalisée de manière a être facilement maintenable.
+									Dans un second temps, Il fallait interroger la base de données implémentées au préalable pour extraire les informations jugées importantes par le client.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Bilan & Compétences :</strong><br>
+									Les différentes ressources autour de la création et gestion d'une base de donnés relationnelle m'ont enseignée à correctement considérer le cahier des charges exprimé par le client de manière optimale permettant d'assurer la cohérence et la qualité des livrables demandés lors de ce projet. Ces travaux nécessitent de développer des compétences dans l'exploitation des données afin de pouvoir prendre des décisions vis-à-vis de l'approche à adopter dans ce type de projet.
+								</p>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<img src="ressources/plongeeBDD.png" alt="Aperçu BDD">
+						</div>
+					</div>
+				</article>
+
+				<article id="Cgj" class="presentation-card contenu">
+					<div class="card-header">
+						<h3>UE6 Collaborer au sein d'une équipe informatique</h3>
+					</div>
+
+					<div class="card-body">
+						<div class="texte">
+							<div class="block">
+								<h5>Projet : Création d'un jeu vidéo (Code Game Jam 2025)</h5>
+								<p>
+									<strong>Contexte :</strong><br>
+									Dans le cadre d'une <a href="https://fr.wikipedia.org/wiki/Game_jam" target="_blank">game jam</a>, nous avons créer un jeu vidéo de toute pièce en C à l'aide de la bibliothèque raylib. Aussi, cet évènement n'a duré que 72 heures mettant à l'épreuve nos connaissances ainsi que nos compétences.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Objectif :</strong><br>
+									Nous devions réaliser un jeu vidéo dans un temps limité et de la manière que l'on désirait suivant le thème "fête des clics". Ainsi, il fallait rapidement établir un projet, une feuille de route et choisir les outils à utiliser.
+									Aussi, ce type d'évènement requiert la mise en place d'une organisation et une plannification structurée et efficace afin de se focaliser sur les tâches identifiées comme étant prioritaire.
+								</p>
+							</div>
+
+							<div class="block">
+								<p>
+									<strong>Bilan & Compétences :</strong><br>
+									Cette Code Game Jam m'a enseigné l'importance de la communication au sein d'une équipe ainsi que l'organisation devant être mise en place afin de faire avancer un projet de manière fluide et efficace. De plus, cela m'a permis d'acquérir des compétences interpersonnelles pour travailler en équipe notamment en organisant mon travail en relation avec celui de son équipe.
+								</p>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<img src="ressources/die&reclick.png" alt="Aperçu Game Jam">
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+	<svg xmlns="http://www.w3.org/2000/svg" id="svg-formations" viewBox="0 0 1440 800" width="1440" height="300" preserveAspectRatio="none" style="margin-bottom: -1px;">
+		<path d="M0 623L60 599.7C120 576.3 240 529.7 360 505.2C480 480.7 600 478.3 720 495.5C840 512.7 960 549.3 1080 552.8C1200 556.3 1320 526.7 1380 511.8L1440 497L1440 801L1380 801C1320 801 1200 801 1080 801C960 801 840 801 720 801C600 801 480 801 360 801C240 801 120 801 60 801L0 801Z" fill="#0f172a" stroke-linecap="round" stroke-linejoin="miter"/>
+	</svg>
+
+	<section class="liens" id="liens">
+		<h2>Liens</h2>
+		<p>Liens amenant à différents projets présentés :</p>
+
+		<div class="container">
+			<div class="inner">
+				<div class="service contenu">
+					<h4>Die & reclick</h4>
+					<img src="ressources/die&reclick.png" alt="Puzzle" class="card-img">
+					<p><a href="https://milo-vls.itch.io/die-and-reclick" class="btn-link">Jouer au jeu de la CGJ</a></p>
+				</div>
+
+				<div class="service contenu">
+					<h4>Timer</h4>
+					<img src="ressources/chrono.png" alt="Chrono" class="card-img">
+					<p><a href="jsp.html" class="btn-link">Chronométrer</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="infos" id="info">
+		<div class="left">
+			<div class="value contenu">
+				<div class="text">
+					<h4>Sortie</h4>
+					<p>La première version officielle du site vient d'être mise en ligne.</p>
+				</div>
+			</div>
+
+			<div class="value contenu">
+				<div class="text">
+					<h4>Panel</h4>
+					<p>Un large choix de scénarios interactifs est proposé d'entrée.</p>
+				</div>
+			</div>
+
+			<div class="value contenu">
+				<div class="text">
+					<h4>Retours</h4>
+					<p>Nous attendons vos retours et avis avec impatience !</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="right contenu">
+			<h2>Informations</h2>
+			<p>Dernière mise à jour effectuée le <b>16 septembre 2026</b>.</p>
+		</div>
+	</section>
+</main>
+
+<script src="src/script.js"></script>
+</body>
+</html>
