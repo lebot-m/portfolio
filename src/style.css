@@ -90,13 +90,13 @@ nav {
 	color: #fff;
 }
 
-nav .links {
+nav .liensBurger {
 	display: flex;
 	align-items: center;
 	gap: 25px;
 }
 
-nav .links .new {
+nav .liensBurger .new {
 	padding: 2px 6px;
 	background: var(--accent-gold);
 	color: #000;
@@ -113,7 +113,7 @@ nav .links .new {
 	width: 28px;
 	cursor: pointer;
 }
-.hamburger .line {
+.hamburger .ligne {
 	background: #fff;
 	height: 2px;
 	width: 100%; }
@@ -136,7 +136,7 @@ nav .links .new {
 	max-width: 800px;
 	margin: 0 auto;
 }
-.presentation .text .inner {
+.presentation .text .division {
 	display: flex; flex-direction:
 		column;
 	align-items: center;
@@ -148,17 +148,17 @@ nav .links .new {
 }
 
 /* Section Projets */
-.trusted {
+.projet {
 	padding: 80px 5%;
 	color: #fff;
 	width: 100%;
 }
-.trusted .inner {
+.projet .division {
 	max-width: 1400px;
 	margin: 0 auto;
 	text-align: center;
 }
-.projets-grid {
+.projets-ecole {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
@@ -224,7 +224,6 @@ nav .links .new {
 	object-fit: contain;
 }
 
-
 .liens {
 	padding-top: 20px;
 	background: #0f172a;
@@ -234,24 +233,24 @@ nav .links .new {
 #concept {
 	margin-bottom: -1px; /* Évite un micro-interstice de 1px sur certains navigateurs */
 }
-.liens .container, .formations .container {
+.liens .section, .formations .section {
 	display: flex;
 	gap: 30px;
 	margin-top: 40px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.liens .container {
+.liens .section {
 	flex-direction: column;
 	width: 100%;
 }
-.liens .inner {
+.liens .division {
 	display: flex;
 	justify-content: center;
 	gap: 30px; flex-wrap: wrap;
 }
 
-.service, .formation-card {
+.service, .formation-cadre {
 	padding: 30px;
 	border-radius: 8px;
 	background: var(--bg-primary);
@@ -265,7 +264,7 @@ nav .links .new {
 	text-align: center;
 }
 
-.formation-card {
+.formation-cadre {
 	width: 320px;
 	background: var(--bg-secondary);
 	padding: 25px;
@@ -314,7 +313,7 @@ nav .links .new {
 /* Adaptations Mobile */
 @media only screen and (max-width: 900px) {
 	.hamburger { display: flex; }
-	nav .links {
+	nav .liensBurger {
 		display: none;
 		flex-direction: column;
 		position: absolute;
@@ -324,7 +323,7 @@ nav .links .new {
 		background: rgba(15, 23, 42, 0.95);
 		padding: 20px 0;
 	}
-	nav .links.shown {
+	nav .liensBurger.shown {
 		display: flex;
 	}
 	.presentation-card .card-body, .infos {
