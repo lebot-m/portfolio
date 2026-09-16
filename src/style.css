@@ -165,7 +165,7 @@ nav .liensBurger .new {
 	margin-top: 40px;
 	text-align: left; }
 
-.presentation-card {
+.presentation-projet {
 	background: #1e293b;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	border-radius: 12px;
@@ -174,40 +174,40 @@ nav .liensBurger .new {
 	flex-direction: column;
 	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-.presentation-card h3 {
+.presentation-projet h3 {
 	color: var(--accent-gold);
 	font-size: 24px;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
-.presentation-card h5 {
+.presentation-projet h5 {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 700;
 	margin: 0 0 10px;
 }
-.presentation-card .card-body {
+.presentation-projet .cadre-projet {
 	display: flex;
 	gap: 40px;
 	align-items: center;
 }
-.presentation-card .texte {
+.presentation-projet .texte {
 	flex: 1.5;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 }
-.presentation-card .texte p {
+.presentation-projet .texte p {
 	color: #cbd5e1;
 	font-size: 16px;
 	margin: 0;
 }
-.presentation-card .texte a {
+.presentation-projet .texte a {
 	color: var(--accent-gold);
 	text-decoration: underline;
 }
 
-.presentation-card .image-wrapper {
+.presentation-projet .image-projet {
 	flex: 1;
 	display: flex;
 	justify-content: center;
@@ -218,7 +218,7 @@ nav .liensBurger .new {
 	padding: 20px;
 	min-height: 220px;
 }
-.presentation-card .image-wrapper img {
+.presentation-projet .image-projet img {
 	max-width: 100%;
 	max-height: 240px;
 	object-fit: contain;
@@ -271,12 +271,12 @@ nav .liensBurger .new {
 	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.card-img {
+.img-lien {
 	width: 64px; height: 64px;
 	object-fit: contain;
 	margin: 15px 0;
 }
-.btn-link {
+.btn-lien {
 	display: inline-block;
 	margin-top: 10px;
 	padding: 8px 16px;
@@ -284,7 +284,7 @@ nav .liensBurger .new {
 	border-radius: 4px;
 	font-weight: bold;
 }
-.btn-link:hover {
+.btn-lien:hover {
 	background: var(--accent-gold);
 	color: #000;
 }
@@ -326,10 +326,10 @@ nav .liensBurger .new {
 	nav .liensBurger.shown {
 		display: flex;
 	}
-	.presentation-card .card-body, .infos {
+	.presentation-projet .cadre-projet, .infos {
 		flex-direction: column;
 	}
-	.presentation-card .image-wrapper {
+	.presentation-projet .image-projet {
 		width: 100%; min-height: 160px;
 	}
 }
