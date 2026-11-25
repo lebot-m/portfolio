@@ -3,127 +3,142 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio LE BOT</title>
+	<title>Mattéo LE BOT — Portfolio Développeur</title>
 	<link href="src/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<nav id="nav">
 
-	<h3>LE BOT Mattéo</h3>
+<canvas id="cyber-globe"></canvas>
+<div class="bg-vignette"></div>
+
+<nav id="nav">
+	<a href="#presentation" class="brand">
+		<span class="status-dot"></span>
+		LE BOT <span>Mattéo</span>
+	</a>
 
 	<div class="liensBurger">
-		<a href="#presentation"><span>Présentation</span></a>
-		<a href="#Formations"><span>Formations</span></a>
-		<a href="#projets"><span>Projets</span></a>
-		<a href="#liens"><span>Liens</span></a>
-		<a href="#info"><span>Informations</span></a>
+		<a href="#presentation">Présentation</a>
+		<a href="#Formations">Formations</a>
+		<a href="#projets">Projets</a>
+		<a href="#liens">Liens</a>
+		<a href="#info">Informations</a>
 	</div>
 
-	<div class="hamburger" onclick="nav();">
-		<div class="ligne ligne1"></div>
-		<div class="ligne ligne2"></div>
-		<div class="ligne ligne3"></div>
+	<div class="hamburger" onclick="nav();" aria-label="Menu">
+		<div class="ligne"></div>
+		<div class="ligne"></div>
+		<div class="ligne"></div>
 	</div>
 </nav>
 
 <main>
+	<!-- HERO / PRÉSENTATION -->
 	<section class="presentation" id="presentation">
-		<div class="text contenu">
-			<div class="division">
+		<div class="hero-grid contenu">
+			<div class="hero-profil">
+				<div class="avatar-wrapper">
+					<img src="ressources/me.jpg" alt="Photo de Mattéo Le Bot">
+				</div>
+				<div class="badge-stage">Disponible pour un stage</div>
+				<a href="./ressources/CV.pdf" target="_blank" id="cv">
+					Télécharger mon CV
+				</a>
+			</div>
+
+			<div class="hero-texte">
+				<span class="surtitre">BUT Informatique • Parcours RACDV</span>
 				<h1>LE BOT Mattéo</h1>
-				<div class="image-projet">
-					<img src="ressources/me.jpg" alt="photo">
 				<h2>Présentation</h2>
-				<p>Je suis LE BOT Mattéo, j'ai 20 ans et suis actuellement en deuxième année d'IUT informatique à Sète,
-					en spécialisation programmation et conception. J'ai commencé à m'intéresser à
-					l'informatique au lycée notamment à travers la spécialité NSI.
-					<br><br>
-					Par la suite, j'ai effectué la piscine d'entrée de l'école 42 où j'ai pu apprendre le
-					C de manière intensive pendant un mois (juillet 2024) me confortant dans mon intérêt
-					pour l'informatique.
-					<br>
-					Au fil de mes projets, j’ai pu travailler sur la conception d’architectures de bases de données,
-					l’optimisation de designs existants ainsi que la réalisation de diagrammes d’analyse. La recherche
-					et la compréhension de nouveaux concepts techniques quels qu'ils soient sont des aspects qui me
-					motivent particulièrement.
-					<br><br>
-					Je suis passionné de jeux vidéo (tetris, versus et autres), d'esport (karmine corp) et de musique,
-					j'ai notamment appris la batterie et joué dans un groupe jusqu'à mon entrée dans les études supérieures.
-					<br><br>
-					J'ai aussi un très bon niveau en anglais, cela m'a ouvert à la culture du monde, me permettant de
-					consommer du contenu en anglais tous les jours, ce qui représente un vrai plus lors de mes voyages à
-					l'étranger.
-					<br><br>
-					<strong>
+
+				<div class="bio-paragraphes">
+					<p>
+						Je suis LE BOT Mattéo, j'ai 20 ans et suis actuellement en deuxième année d'IUT informatique à Sète,
+						en spécialisation programmation et conception. J'ai commencé à m'intéresser à
+						l'informatique au lycée notamment à travers la spécialité NSI.
+					</p>
+					<p>
+						Par la suite, j'ai effectué la piscine d'entrée de l'école 42 où j'ai pu apprendre le
+						C de manière intensive pendant un mois (juillet 2024) me confortant dans mon intérêt
+						pour l'informatique.
+					</p>
+					<p>
+						Au fil de mes projets, j’ai pu travailler sur la conception d’architectures de bases de données,
+						l’optimisation de designs existants ainsi que la réalisation de diagrammes d’analyse. La recherche
+						et la compréhension de nouveaux concepts techniques quels qu'ils soient sont des aspects qui me
+						motivent particulièrement.
+					</p>
+					<p>
+						Je suis passionné de jeux vidéo (tetris, versus et autres), d'esport (karmine corp) et de musique,
+						j'ai notamment appris la batterie et joué dans un groupe jusqu'à mon entrée dans les études supérieures.
+					</p>
+					<p>
+						J'ai aussi un très bon niveau en anglais, cela m'a ouvert à la culture du monde, me permettant de
+						consommer du contenu en anglais tous les jours, ce qui représente un vrai plus lors de mes voyages à
+						l'étranger.
+					</p>
+					<p class="call-to-action">
 						Aujourd’hui, je suis prêt à rejoindre le monde professionnel et recherche une entreprise que je
 						peux intégrer en stage. Dans ce cadre, je pourrai mettre mes compétences au service de
 						projets concrets, continuer à apprendre et contribuer de manière efficace aux objectifs de votre entreprise.
-					</strong>
-				</p>
-				<div id="cv">
-					<a href="./ressources/CV.pdf">CV - cliquez ici</a>
-				</div>
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<svg xmlns="http://www.w3.org/2000/svg" id="svg-formations" viewBox="0 0 1440 800" width="1440" height="300" preserveAspectRatio="none" style="margin-bottom: -1px;">
-		<path d="M0 623L60 599.7C120 576.3 240 529.7 360 505.2C480 480.7 600 478.3 720 495.5C840 512.7 960 549.3 1080 552.8C1200 556.3 1320 526.7 1380 511.8L1440 497L1440 801L1380 801C1320 801 1200 801 1080 801C960 801 840 801 720 801C600 801 480 801 360 801C240 801 120 801 60 801L0 801Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter"/>
-	</svg>
-
+	<!-- FORMATIONS -->
 	<section class="formations" id="Formations">
-		<div class="text">
+		<div class="section-header">
+			<span class="surtitre">Parcours académique</span>
 			<h2>Formations</h2>
 		</div>
 
-		<div class="section">
+		<div class="formations-grid">
 			<div class="formation-cadre contenu">
-				<div class="nom">
-					<h4>2021-2024</h4>
-					<h5><strong>Lycée Saint-Joseph - Avignon</strong></h5>
-				</div>
-				<p>BAC Général spécialités Maths-NSI</p>
+				<span class="annee-badge">2021 - 2024</span>
+				<h4>BAC Général</h4>
+				<h5>Lycée Saint-Joseph — Avignon</h5>
+				<p>Spécialités Mathématiques et NSI (Numérique et Sciences Informatiques).</p>
 			</div>
 
 			<div class="formation-cadre contenu">
-				<div class="nom">
-					<h4>2024-2025</h4>
-					<h5><strong>École d’ingénierie Esisar - Valence</strong></h5>
-				</div>
-				<p>Classe préparatoire intégrée</p>
+				<span class="annee-badge">2024 - 2025</span>
+				<h4>Classe préparatoire intégrée</h4>
+				<h5>École d’ingénierie Esisar — Valence</h5>
+				<p>Formation scientifique et technique en informatique et systèmes embarqués.</p>
 			</div>
 
-			<div class="formation-cadre contenu">
-				<div class="nom">
-					<h4>2025-2027 (en cours)</h4>
-					<h5><strong>IUT de Montpellier-Sète</strong></h5>
-				</div>
-				<p>BUT Informatique Développement Applications (parcours RACDV)</p>
+			<div class="formation-cadre contenu active-card">
+				<span class="annee-badge">2025 - 2027 (en cours)</span>
+				<h4>BUT Informatique</h4>
+				<h5>IUT de Montpellier-Sète</h5>
+				<p>Développement d'Applications (parcours RACDV : Réalisation d'Applications : Conception, Développement, Validation).</p>
 			</div>
 		</div>
 	</section>
 
-	<svg xmlns="http://www.w3.org/2000/svg" id="svg-projets" viewBox="0 0 1440 800" width="1440" height="300" preserveAspectRatio="none" style="margin-bottom: -1px;">
-		<path d="M0 175L60 198.3C120 221.7 240 268.3 360 292.8C480 317.3 600 319.7 720 302.5C840 285.3 960 248.7 1080 245.2C1200 241.7 1320 271.3 1380 286.2L1440 301L1440 0L1380 0C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0L0 0Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter"/>
-	</svg>
-
+	<!-- PROJETS -->
 	<section class="projet" id="projets">
 		<div class="division">
-			<h2>Mes projets 2025-2026</h2>
+			<div class="section-header">
+				<span class="surtitre">Compétences BUT</span>
+				<h2>Mes projets 2025-2026</h2>
+			</div>
 
 			<div class="projets-ecole">
+				<!-- UE1 -->
 				<article id="Dominion" class="presentation-projet contenu">
 					<div class="card-header">
-						<h3>UE1 Réaliser un développement d'application</h3>
+						<span class="ue-tag">UE1 • Réaliser un développement d'application</span>
+						<h3>Projet : Dominion Seaside</h3>
 					</div>
 
 					<div class="cadre-projet">
 						<div class="texte">
 							<div class="block">
-								<h5>Projet : Dominion Seaside</h5>
+								<h5>Contexte</h5>
 								<p>
-									<strong>Contexte :</strong><br>
 									Dans le cadre d’un projet de développement d'application en JAVA et JAVAFX, nous
 									avons conçu un jeu basé sur le Dominion, extension Seaside. L’objectif était, en
 									deux parties, d'implémenter la logique du jeu avec une interface préexistante. Dans un
@@ -132,8 +147,8 @@
 							</div>
 
 							<div class="block">
+								<h5>Objectif</h5>
 								<p>
-									<strong>Objectif :</strong><br>
 									L'objectif principal était de rendre utilisable et de designer une interface à
 									partir d'un code déjà présent. Contrairement à d'autres projets que j'ai pu réaliser
 									précédemment, je me suis concentré sur la qualité du code, la validation de nombreux
@@ -143,8 +158,8 @@
 							</div>
 
 							<div class="block">
+								<h5>Bilan & Compétences</h5>
 								<p>
-									<strong>Bilan & Compétences :</strong><br>
 									Ce projet m'a permis de développer mes compétences dans l'élaboration d'une
 									application à travers les diverses phases de test ayant suivi l'implémentation de
 									conceptions simples à travers des cartes aux effets différents. Ainsi, j'ai eu à
@@ -160,19 +175,18 @@
 					</div>
 				</article>
 
-
-
+				<!-- UE2 -->
 				<article id="bj" class="presentation-projet contenu">
 					<div class="card-header">
-						<h3>UE2 Optimiser des applications</h3>
+						<span class="ue-tag">UE2 • Optimiser des applications</span>
+						<h3>Projet : BlackJack</h3>
 					</div>
 
 					<div class="cadre-projet">
 						<div class="texte">
 							<div class="block">
-								<h5>Projet : BlackJack</h5>
+								<h5>Contexte</h5>
 								<p>
-									<strong>Contexte :</strong><br>
 									Dans le cadre d’un projet de développement d'application en JAVA, nous
 									avons créé un jeu de BlackJack en adoptant une méthode Agile. Nous devions réaliser
 									ce projet de deux manières différentes, la première en programmation impérative et
@@ -181,8 +195,8 @@
 							</div>
 
 							<div class="block">
-							img	<p>
-									<strong>Objectif :</strong><br>
+								<h5>Objectif</h5>
+								<p>
 									L'objectif premier était de réaliser un jeu de BlackJack sans interface graphique
 									(intéractions se faisant via le terminal) tout en répondant aux diverses demandes du
 									client ainsi qu'en validant des tests unitaires secrets dont nous n'avions pas
@@ -194,8 +208,8 @@
 							</div>
 
 							<div class="block">
+								<h5>Bilan & Compétences</h5>
 								<p>
-									<strong>Bilan & Compétences :</strong><br>
 									Ce projet m'a permis de développer des acquis dans l'amélioration et l'implémentation
 									de fonctionnalités à travers différentes étapes de tests et de refactorisation. De plus,
 									la méthode employée m'a permis d'adopter une approche plus structurée afin d'évoluer
@@ -210,18 +224,18 @@
 					</div>
 				</article>
 
-
+				<!-- UE3 -->
 				<article id="systeme" class="presentation-projet contenu">
 					<div class="card-header">
-						<h3>UE3 Administrer des systèmes informatiques communicants complexes</h3>
+						<span class="ue-tag">UE3 • Administrer des systèmes informatiques communicants complexes</span>
+						<h3>Projet : Déploiement d'une nouvelle architecture technique</h3>
 					</div>
 
 					<div class="cadre-projet">
 						<div class="texte">
 							<div class="block">
-								<h5>Projet : Déploiement d'une nouvelle architecture technique</h5>
+								<h5>Contexte</h5>
 								<p>
-									<strong>Contexte :</strong><br>
 									Dans le cadre de la mise en place d'une nouvelle infrastructure informatique, nous
 									devions déployer, grâce à des machines virtuelles, divers services interconnectés.
 									Il fallait déployer, configurer et sécuriser différents services système et réseau
@@ -231,8 +245,8 @@
 							</div>
 
 							<div class="block">
+								<h5>Objectif</h5>
 								<p>
-									<strong>Objectif :</strong><br>
 									Le projet a été réalisé en duo au sein d’un environnement virtualisé. Chaque membre
 									était responsable de plusieurs services (NGINX, MariaDB, MySQL, SSH, serveur mail Postfix).
 									Les machines virtuelles devaient communiquer entre elles via un plan d’adressage
@@ -241,14 +255,14 @@
 							</div>
 
 							<div class="block">
-								<p>
-									<strong>Bilan & Compétences :</strong><br>
-									- Déployer plusieurs services réseau sur différentes machines virtuelles.<br>
-									- Configurer les accès distants sécurisés (SSH).<br>
-									- Mettre en place une architecture client/serveur cohérente.<br>
-									- Implémenter une redirection de port (NAT).<br>
-									- Comprendre le fonctionnement des ports, des règles de routage.
-								</p>
+								<h5>Bilan & Compétences</h5>
+								<ul class="liste-competences">
+									<li>Déployer plusieurs services réseau sur différentes machines virtuelles.</li>
+									<li>Configurer les accès distants sécurisés (SSH).</li>
+									<li>Mettre en place une architecture client/serveur cohérente.</li>
+									<li>Implémenter une redirection de port (NAT).</li>
+									<li>Comprendre le fonctionnement des ports, des règles de routage.</li>
+								</ul>
 							</div>
 						</div>
 
@@ -258,17 +272,18 @@
 					</div>
 				</article>
 
+				<!-- UE4 -->
 				<article id="Bdd" class="presentation-projet contenu">
 					<div class="card-header">
-						<h3>UE4 Gérer des données de l'information</h3>
+						<span class="ue-tag">UE4 • Gérer des données de l'information</span>
+						<h3>Projet : Base de données d'un Club de plongée</h3>
 					</div>
 
 					<div class="cadre-projet">
 						<div class="texte">
 							<div class="block">
-								<h5>Projet : Base de données d'un Club de plongée</h5>
+								<h5>Contexte</h5>
 								<p>
-									<strong>Contexte :</strong><br>
 									Dans le cadre d’un projet d'élaboration d'une base données et d'extractions
 									d'informations d'un club de plongée, nous avons créé une base de données relationnelle.
 									Il fallait dans un premier temps déterminer les besoins du client afin de proposer une solution technique fiable et efficace.
@@ -276,21 +291,21 @@
 							</div>
 
 							<div class="block">
+								<h5>Objectif</h5>
 								<p>
-									<strong>Objectif :</strong><br>
 									L'objectif principal était de réaliser d'abord un schéma entité/association devant
 									répondre à un cahier des charges. Ce processus doit par ailleurs représenter la
 									structure de la base données en vue d'avoir un retour client précédent la phase de
 									conception. Aussi, la base de données devait être réalisée de manière a être
-									facilement maintenable. Dans un second temps, Il fallait interroger la base de
-									données implémentées au préalable pour extraire les informations jugées importantes
+									facilement maintenable. Dans un second temps, il fallait interroger la base de
+									données implémentée au préalable pour extraire les informations jugées importantes
 									par le client.
 								</p>
 							</div>
 
 							<div class="block">
+								<h5>Bilan & Compétences</h5>
 								<p>
-									<strong>Bilan & Compétences :</strong><br>
 									Les différentes ressources autour de la création et gestion d'une base de donnés
 									relationnelle m'ont enseigné à correctement considérer le cahier des charges exprimé
 									par le client de manière optimale permettant d'assurer la cohérence et la qualité
@@ -307,26 +322,26 @@
 					</div>
 				</article>
 
-
+				<!-- UE5 -->
 				<article id="Escape-Game" class="presentation-projet contenu">
 					<div class="card-header">
-						<h3>UE5 Conduire un projet</h3>
+						<span class="ue-tag">UE5 • Conduire un projet</span>
+						<h3>Projet : Escape Game</h3>
 					</div>
 
 					<div class="cadre-projet">
 						<div class="texte">
 							<div class="block">
-								<h5>Projet : Escape Game</h5>
+								<h5>Contexte</h5>
 								<p>
-									<strong>Contexte :</strong><br>
 									Dans le cadre d’un projet de création d'un Escape game, nous devions réaliser le concept
 									d'une équipe cliente ainsi que le site web associé.
 								</p>
 							</div>
 
 							<div class="block">
+								<h5>Objectif</h5>
 								<p>
-									<strong>Objectif :</strong><br>
 									L'objectif premier était de réaliser un projet imaginé par une autre équipe en jugeant
 									si celui-ci était réalisable. Pour cela, il nous fallait planifier divers réunions
 									afin de recueillir des retours sur les différentes phases du projet.
@@ -334,8 +349,8 @@
 							</div>
 
 							<div class="block">
+								<h5>Bilan & Compétences</h5>
 								<p>
-									<strong>Bilan & Compétences :</strong><br>
 									Ce projet m'a permis de développer mes capacités en communication, en organisation
 									ainsi qu'en planification me permettant m'améliorer vis-à-vis de la gestion de projets de groupes.
 									Ce projet m'a aussi fait comprendre de manière plus concrète les difficultés possibles
@@ -350,28 +365,28 @@
 					</div>
 				</article>
 
-
+				<!-- UE6 -->
 				<article id="Cgj" class="presentation-projet contenu">
 					<div class="card-header">
-						<h3>UE6 Collaborer au sein d'une équipe informatique</h3>
+						<span class="ue-tag">UE6 • Collaborer au sein d'une équipe informatique</span>
+						<h3>Projet : Création d'un jeu vidéo (Code Game Jam 2025)</h3>
 					</div>
 
 					<div class="cadre-projet">
 						<div class="texte">
 							<div class="block">
-								<h5>Projet : Création d'un jeu vidéo (Code Game Jam 2025)</h5>
+								<h5>Contexte</h5>
 								<p>
-									<strong>Contexte :</strong><br>
 									Dans le cadre d'une <a href="https://fr.wikipedia.org/wiki/Game_jam" target="_blank">game jam</a>,
 									nous avons créé un jeu vidéo de toute pièce en C à l'aide de la bibliothèque raylib.
-									Aussi, cet évènement n'a duré que 72, heures mettant à l'épreuve nos connaissances
+									Aussi, cet évènement n'a duré que 72 heures, mettant à l'épreuve nos connaissances
 									ainsi que nos compétences.
 								</p>
 							</div>
 
 							<div class="block">
+								<h5>Objectif</h5>
 								<p>
-									<strong>Objectif :</strong><br>
 									Nous devions réaliser un jeu vidéo dans un temps limité et de la manière que l'on
 									désirait suivant le thème "fête des clics". Ainsi, il fallait rapidement établir un
 									projet, une feuille de route et choisir les outils à utiliser. Aussi, ce type
@@ -381,8 +396,8 @@
 							</div>
 
 							<div class="block">
+								<h5>Bilan & Compétences</h5>
 								<p>
-									<strong>Bilan & Compétences :</strong><br>
 									Cette Code Game Jam m'a enseigné l'importance de la communication au sein d'une
 									équipe ainsi que l'organisation devant être mise en place afin de faire avancer un
 									projet de manière fluide et efficace. De plus, cela m'a permis d'acquérir des
@@ -397,62 +412,167 @@
 						</div>
 					</div>
 				</article>
-
 			</div>
 		</div>
 	</section>
 
-	<svg xmlns="http://www.w3.org/2000/svg" id="svg-formations" viewBox="0 0 1440 800" width="1440" height="300" preserveAspectRatio="none" style="margin-bottom: -1px;">
-		<path d="M0 623L60 599.7C120 576.3 240 529.7 360 505.2C480 480.7 600 478.3 720 495.5C840 512.7 960 549.3 1080 552.8C1200 556.3 1320 526.7 1380 511.8L1440 497L1440 801L1380 801C1320 801 1200 801 1080 801C960 801 840 801 720 801C600 801 480 801 360 801C240 801 120 801 60 801L0 801Z" fill="#0f172a" stroke-linecap="round" stroke-linejoin="miter"/>
-	</svg>
-
+	<!-- LIENS -->
 	<section class="liens" id="liens">
-		<h2>Liens</h2>
-		<p>Liens menant aux différents projets présentés :</p>
+		<div class="section-header">
+			<span class="surtitre">Accès direct</span>
+			<h2>Liens des projets</h2>
+			<p>Liens menant aux différents projets présentés :</p>
+		</div>
 
-		<div class="section">
-			<div class="division">
-				<div class="service contenu">
-					<h4>Die & reclick</h4>
-					<img src="ressources/die&reclick.png" alt="Aperçu jeu Game Jam" class="img-lien">
-					<p><a href="https://milo-vls.itch.io/die-and-reclick" class="btn-lien">Jouer au jeu de la CGJ</a></p>
-				</div>
+		<div class="division">
+			<div class="service contenu">
+				<img src="ressources/die&reclick.png" alt="Aperçu jeu Game Jam" class="img-lien">
+				<h4>Die &amp; reclick</h4>
+				<p class="service-desc">Jeu réalisé en 72h lors de la Code Game Jam (C / raylib).</p>
+				<a href="https://milo-vls.itch.io/die-and-reclick" target="_blank" class="btn-lien">Jouer au jeu de la CGJ</a>
+			</div>
 
-				<div class="service contenu">
-					<h4>Dominion</h4>
-					<img src="ressources/logo-Dominion.jpg" alt="Logo Dominion" class="img-lien">
-					<p><a href="https://github.com/lebot-m/Dominion-seaside-logique" class="btn-lien">Dépôt GitHub Dominion</a></p>
-				</div>
+			<div class="service contenu">
+				<img src="ressources/logo-Dominion.jpg" alt="Logo Dominion" class="img-lien">
+				<h4>Dominion Seaside</h4>
+				<p class="service-desc">Implémentation complète de la logique et interface JavaFX.</p>
+				<a href="https://github.com/lebot-m/Dominion-seaside-logique" target="_blank" class="btn-lien">Dépôt GitHub Dominion</a>
 			</div>
 		</div>
 	</section>
 
-
-	<section class="infos" id="info">
-		<div>
-			<div class="contenu">
-					<h4>Sortie</h4>
-					<p>La première version officielle du site a été mise en ligne le 15/09/2026.</p>
+	<!-- FOOTER / INFORMATIONS -->
+	<footer class="infos" id="info">
+		<div class="infos-container">
+			<div class="infos-col">
+				<h2>Informations</h2>
+				<p>La première version officielle du site a été mise en ligne le 15/09/2026.</p>
+				<p>Dernière mise à jour effectuée le <b>12 octobre 2026</b>.</p>
 			</div>
 
-			<div class="contenu">
-					<h4>GitHub (projets personnels)</h4>
-					<a href="https://github.com/lebot-m">https://github.com/lebot-m</a>
-			</div>
+			<div class="infos-col liens-externes">
+				<div class="info-item">
+					<span class="info-label">GitHub (projets personnels)</span>
+					<a href="https://github.com/lebot-m" target="_blank">github.com/lebot-m</a>
+				</div>
 
-			<div class="contenu">
-					<h4>Linkedin</h4>
-					<a href="https://www.linkedin.com/in/matteo-le-bot-9373363aa">www.linkedin.com/in/matteo-le-bot-9373363aa</a>
+				<div class="info-item">
+					<span class="info-label">LinkedIn</span>
+					<a href="https://www.linkedin.com/in/matteo-le-bot-9373363aa" target="_blank">linkedin.com/in/matteo-le-bot-9373363aa</a>
+				</div>
 			</div>
 		</div>
-
-		<div class="contenu droite">
-			<h2>Informations</h2>
-			<p>Dernière mise à jour effectuée le <b>12 octobre 2026</b>.</p>
-		</div>
-	</section>
+	</footer>
 </main>
 
 <script src="src/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+
+<script>
+	(async function initCyberGlobe() {
+		const canvas = document.getElementById('cyber-globe');
+		const ctx = canvas.getContext('2d');
+
+		const size = 760;
+		const dpr = window.devicePixelRatio || 1;
+		canvas.width = size * dpr;
+		canvas.height = size * dpr;
+		ctx.scale(dpr, dpr);
+
+		// Création du motif hachuré (style thème "Patterns" amCharts)
+		function createHatchPattern() {
+			const pCanvas = document.createElement('canvas');
+			const pSize = 8; // Espacement entre les hachures
+			pCanvas.width = pSize;
+			pCanvas.height = pSize;
+			const pCtx = pCanvas.getContext('2d');
+
+			pCtx.strokeStyle = 'rgba(226, 232, 240, 0.55)';
+			pCtx.lineWidth = 1.2;
+			pCtx.beginPath();
+			pCtx.moveTo(0, pSize);
+			pCtx.lineTo(pSize, 0);
+			pCtx.moveTo(-pSize / 2, pSize / 2);
+			pCtx.lineTo(pSize / 2, -pSize / 2);
+			pCtx.moveTo(pSize / 2, pSize * 1.5);
+			pCtx.lineTo(pSize * 1.5, pSize / 2);
+			pCtx.stroke();
+
+			return ctx.createPattern(pCanvas, 'repeat');
+		}
+
+		const hatchPattern = createHatchPattern();
+
+		// Palette monochrome sombre (thème Patterns + dark=1)
+		const colors = {
+			bgSphere: '#090b0e',
+			graticule: 'rgba(148, 163, 184, 0.14)',
+			landFill: hatchPattern,
+			landStroke: 'rgba(241, 245, 249, 0.75)',
+			rimGlow: 'rgba(226, 232, 240, 0.25)'
+		};
+
+		// Mêmes paramètres d'inclinaison que ton URL (roll: 12 / -12, pitch: -16)
+		const projection = d3.geoOrthographic()
+				.scale(size * 0.44)
+				.translate([size / 2, size / 2])
+				.rotate([0, -16, -12]);
+
+		const path = d3.geoPath(projection, ctx);
+		const graticule = d3.geoGraticule10();
+
+		const world = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/land-110m.json');
+		const land = topojson.feature(world, world.objects.land);
+
+		function render() {
+			ctx.clearRect(0, 0, size, size);
+
+			// 1. Sphère sombre avec contour fin lumineux
+			ctx.save();
+			ctx.beginPath();
+			path({ type: 'Sphere' });
+			ctx.fillStyle = colors.bgSphere;
+			ctx.shadowColor = colors.rimGlow;
+			ctx.shadowBlur = 24;
+			ctx.fill();
+			ctx.lineWidth = 1.2;
+			ctx.strokeStyle = 'rgba(241, 245, 249, 0.35)';
+			ctx.stroke();
+			ctx.restore();
+
+			// 2. Grille méridiens / parallèles discrète
+			ctx.beginPath();
+			path(graticule);
+			ctx.lineWidth = 0.6;
+			ctx.strokeStyle = colors.graticule;
+			ctx.stroke();
+
+			// 3. Continents remplis avec le motif hachuré + contour net
+			ctx.beginPath();
+			path(land);
+			ctx.fillStyle = colors.landFill;
+			ctx.fill();
+			ctx.lineWidth = 1.1;
+			ctx.strokeStyle = colors.landStroke;
+			ctx.stroke();
+		}
+
+		// Rotation pilotée par Anime.js (vitesse proche de 0.22 de ton URL)
+		const state = { lon: 0 };
+		anime({
+			targets: state,
+			lon: 360,
+			duration: 50000,
+			easing: 'linear',
+			loop: true,
+			update: () => {
+				projection.rotate([state.lon, -16, -12]);
+				render();
+			}
+		});
+	})();
+</script>
 </body>
 </html>
